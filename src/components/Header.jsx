@@ -13,7 +13,7 @@ const Header = () => {
         display: 'flex',
         justifyContent: 'space-between',  // Items will be spaced out
         alignItems: 'center',             // Center items vertically
-        padding: '10px 20px',             // Padding for spacing
+        padding: '15px 20px',             // Padding for spacing
         backgroundColor: '#101624',   // Transparent background
         width: '100%',
         boxSizing: 'border-box',
@@ -36,8 +36,9 @@ const Header = () => {
     };
 
     return (
-        <header style={headerStyle} className='relative'>
-            <div className={isOpen ? `h-screen inset-0 z-10 bg-opacity-70 backdrop-sm w-full fixed bg-gray-900`:'hidden'}></div>
+        <header style={headerStyle} className='relative w-full '>
+            {/* header menu backdrop */}
+            <div onClick={toggleMenu} className={isOpen ? `h-screen inset-0 z-10 bg-opacity-70 backdrop-sm w-full fixed bg-gray-900 md:hidden`:'hidden '}></div>
             <div className='z-50'>
                <a href="/">
                     <img
@@ -74,8 +75,8 @@ const Header = () => {
                     <a style={linkStyle}  onClick={toggleMenu} href="#features">Features</a>
                 </div>
                 <div className='w-full flex justify-center flex-col md:flex-row items-center gap-2 '>
-                    <a  href="#download" className='w-11/12 md:w-full mx-auto'>
-                        <button className='md:bg-[#2AFD84] h bg-white text-[#101624] text-sm font-semibold whitespace-nowrap transition-colors duration-300 ease-lineart px-5 py-2.5 rounded w-full'>Download App Now</button>
+                    <a onClick={toggleMenu} href="#download" className='w-11/12 md:w-full mx-auto'>
+                        <button  className='md:bg-[#2AFD84]  bg-white text-[#101624] text-sm font-semibold whitespace-nowrap transition-colors duration-300 ease-linear px-5 py-2.5 rounded w-full'>Download App Now</button>
                       
                     </a>
                     <a onClick={toggleMenu} href="#" className='w-11/12 mx-auto md:hidden'>

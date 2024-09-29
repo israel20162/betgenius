@@ -14,7 +14,7 @@ function Features() {
                     <h1 className="md:text-4xl text-2xl md:leading-relaxed text-wrap font-bold mb-4 md:w-3/5">
                         Free Games Only. No VIP. No Pay After Win.
                     </h1>
-                    <p className="text-xs md:text-sm leading-loose w-11/12 text-wrap md:w-2/3 md:mb-6 mb-4 text-[#E6E7EB]">
+                    <p className="text-sm leading-loose w-11/12 text-wrap md:w-2/3 md:mb-6 mb-4 text-[#E6E7EB]">
                         No VIP tiers. No hidden fees. No payments after wins—just pure betting excitement with BetGenius!
                     </p>
 
@@ -34,11 +34,11 @@ function Features() {
                     <h1 className="md:text-4xl text-2xl md:leading-relaxed text-wrap font-bold md:mb-4 mb-2">
                         Get Free Booking Codes
                     </h1>
-                    <p className="text-xs md:text-sm leading-loose w-11/12 text-wrap md:w-2/3 md:mb-6 mb-4 text-[#E6E7EB]">
+                    <p className="text-sm leading-loose w-11/12 text-wrap md:w-2/3 md:mb-6 mb-4 text-[#E6E7EB]">
                         Easily access the best booking codes from the top bookies you trust with BetGenius.
                     </p>
-                    <a href="/Telegram">
-                        <button className="bg-[#2AFD84] text-[#101624] py-3 px-4 flex items-center gap-2 rounded md:w-2/5 text-center text-sm  font-semibold transition duration-300 hover:bg-[#24d06f]">
+                    <a href="#download">
+                        <button className="bg-[#2AFD84] text-[#101624] py-3 px-4 flex items-center gap-2 rounded md:w-2/5 text-center text-sm  font-semibold transition duration-300 md:hover:bg-[#24d06f]">
                             <span>Download App Now</span>
                             {/* arrow right svg */}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" className=" h-5 m-0 p-0">
@@ -69,7 +69,7 @@ function Features() {
                     <h1 className="md:text-4xl text-2xl md:leading-relaxed text-wrap font-bold mb-4">
                         Instant Sports Updates at Your Fingertips
                     </h1>
-                    <p className="text-xs md:text-sm leading-loose w-11/12 text-wrap md:w-2/3 md:mb-6 mb-4 text-[#E6E7EB]">
+                    <p className="text-sm md:text-sm leading-loose w-11/12 text-wrap md:w-2/3 md:mb-6 mb-4 text-[#E6E7EB]">
                         Stay updated with live scores, real-time results, and detailed match statistics from all your favorite sports, all in one place.
                     </p>
 
@@ -95,11 +95,11 @@ function Features() {
                     <h1 className="md:text-4xl text-2xl leading-relaxed text-wrap font-bold mb-4">
                         Your Source for Accurate Sports News
                     </h1>
-                    <p className="text-xs md:text-sm leading-loose w-11/12 text-wrap md:w-2/3 md:mb-6 mb-4 text-[#E6E7EB]">
+                    <p className=" text-sm leading-loose w-11/12 text-wrap md:w-2/3 md:mb-6 mb-4 text-[#E6E7EB]">
                         Get up-to-date and precise news, live updates, and in-depth analysis with the BetGenius App – your ultimate companion for staying informed.
                     </p>
-                    <a href="/Telegram">
-                        <button className="bg-[#2AFD84] text-[#101624] py-3 px-4 flex items-center gap-2 rounded md:w-2/5  text-sm  font-semibold transition duration-300 hover:bg-[#24d06f]">
+                    <a href="#download">
+                        <button className="bg-[#2AFD84] text-[#101624] py-3 px-4 flex items-center gap-2 rounded md:w-2/5  text-sm  font-semibold transition duration-300 md:hover:bg-[#24d06f]">
                             <span>Download App Now</span>
                             {/* arrow right svg */}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
@@ -124,8 +124,9 @@ function Features() {
 
 
             </section>
-            <section id='download' className='flex flex-col justify-center items-center md:h-screen gap-6 md:mb-28 mb-16'>
-                <h1 className="text-4xl leading-relaxed text-wrap font-bold  text-white">
+            {/* download section */}
+            <section id='download' className='flex flex-col justify-center items-center md:h-screen h-auto gap-6 md:mb-28 mb-16 w-full overflow-auto' >
+                <h1 className="md:text-4xl text-2xl leading-relaxed text-wrap font-bold  text-white">
                     Let's Win Together
                 </h1>
                 {/* Image Section */}
@@ -137,11 +138,11 @@ function Features() {
                     />
                 </div>
                 <div className='flex gap-2'>
-                    <a href="#download" target="_blank" rel="noopener noreferrer">
-                        <img src={AppleStore} alt="" />
+                    <a href="#download" >
+                        <img src={AppleStore} alt="" className='h-24 w-32 object-contain' />
                     </a>
-                    <a href="#download" target="_blank" rel="noopener noreferrer">
-                        <img src={GooglePlayStore} alt="" />
+                    <a href="#download" >
+                        <img src={GooglePlayStore} alt="" className='h-24 w-32 object-contain' />
                     </a>
                 </div>
             </section>

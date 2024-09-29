@@ -4,6 +4,9 @@ import Hero from './components/Hero'
 import './App.css'
 import Features from './components/Features';
 import Footer from './components/Footer';
+import WinTogether from './assets/win-together.png';
+import AppleStore from './assets/apple-store.svg';
+import GooglePlayStore from './assets/google-store.svg';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,10 +23,11 @@ function App() {
   }
   return (
 
-    <div className='flex justify-between flex-col overflow-x-clip !scroll-smooth overflow-scroll' style={mainStyle}>
-      <Header />
+    <div className='flex justify-between flex-col overflow-x-clip !scroll-smooth relative' style={mainStyle}>
+      <div className="fixed w-full md:relative"><Header /></div>
       <Hero />
       <Features />
+     
       <Footer />
 
     </div>
