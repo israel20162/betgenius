@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*, html {
+
+    scroll-behavior: smooth !important;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  scroll-behavior: smooth !important;
+}
+
+#root {
+  scroll-behavior: smooth;
+}
+
+/* body {
+  margin: 0 !important ;
+} */
